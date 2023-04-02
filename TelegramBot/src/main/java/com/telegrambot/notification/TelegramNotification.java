@@ -19,8 +19,8 @@ public class TelegramNotification {
             textMessage = errorMessage;
 
         String urlString = "https://api.telegram.org/bot%s/sendMessage?chat_id=%s&text=%s";
-        urlString = String.format(urlString, "5895107265:AAGnAejQevhiwiYEZTqlGo657IlOJZV0syw",
-               "-1001831532269", textMessage);
+        urlString = String.format(urlString, "your_telegram_group_api_token",
+               "your_telegram_group_chat_id", textMessage);
         try {
             URL url = new URL(urlString);
             URLConnection conn = url.openConnection();
